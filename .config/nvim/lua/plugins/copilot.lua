@@ -3,6 +3,10 @@ return {
 	cmd = "Copilot",
 	event = "InsertEnter",
 	config = function()
-		require("copilot").setup(options)
+		require("copilot").setup({
+			suggestion = {
+				-- auto_trigger = true,
+			},
+		})
 	end,
 }
