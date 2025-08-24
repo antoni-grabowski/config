@@ -1,9 +1,10 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
-vim.o.showmode = false
-vim.schedule(function()
-	vim.o.clipboard = "unnamedplus"
-end)
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.undofile = true
+vim.g.have_nerd_font = true
+vim.g.breakindent = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.signcolumn = 'yes'
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
