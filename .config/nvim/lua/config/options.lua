@@ -1,10 +1,4 @@
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.undofile = true
-vim.g.have_nerd_font = true
-vim.g.breakindent = true
-vim.o.ignorecase = true
-vim.o.smartcase = true
-vim.o.signcolumn = 'yes'
-vim.o.shiftwidth = 2
 vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.breakindent = true
+vim.o.undofile = true
