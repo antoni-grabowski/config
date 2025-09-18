@@ -8,12 +8,14 @@ return{
 		'hrsh7th/cmp-cmdline',
 		'L3MON4D3/LuaSnip',
 		'saadparwaiz1/cmp_luasnip',
+		'hrsh7th/cmp-nvim-lsp-signature-help'
 	},
 	config = function()
 		local cmp = require'cmp'
 		local luasnip = require("luasnip")
 
 		cmp.setup({
+			experimental = { ghost_text = true},
 			snippet = {
 				expand = function(args)
 					require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
@@ -68,6 +70,7 @@ return{
 				{ name = 'luasnip' }, -- For luasnip users.
 			}, {
 				{ name = 'buffer' },
+				{ name = 'nvim_lsp_signature_help' }
 			})
 		})
 
